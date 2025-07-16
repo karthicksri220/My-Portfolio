@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flat Calculator</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #00a99d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      background: white;
+      padding: 10px;
+      border-radius: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      width: 380px;
+      height: auto;
+    }
+
+    .display {
+      background-color: #00a99d;
+      color: white;
+      font-size: 2em;
+      text-align: right;
+      padding: 15px 30px;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      margin-top: 30px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(6, 60px);
+      gap: 10px;
+    }
+
+    .button {
+      background-color: #00a99d;
+      color: white;
+      border: none;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #007c79;
+    }
+
+    .button.equal {
+      background-color: #005f5b;
+      grid-row: span 1;
+    }
+
+    .button.plus {
+      grid-row: span 2;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="button">ON/C</button>
+      <button class="button">CE</button>
+      <button class="button">MRC</button>
+      <button class="button">M-</button>
+      <button class="button">M+</button>
+      
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button">%</button>
+      <button class="button">&radic;</button>
+      
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button">*</button>
+      <button class="button">/</button>
+      
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button plus">+</button>
+      
+      <button class="button">0</button>
+      <button class="button">+/-</button>
+      <button class="button">.</button>
+      <button class="button">-</button>
+      
+      <button class="button equal">=</button>
+    </div>
+  </div>
+</body>
+</html>

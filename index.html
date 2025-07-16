@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+<script>
+  function toggleMenu() {
+    const navList = document.querySelector("nav ul");
+    navList.classList.toggle("show");
+  }
+</script>
+
+<!-- Header Section -->
+  <header>
+    <h1>Portfolio
+      <button class="hamburger" onclick="toggleMenu()">☰
+        
+      </button>
+
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section-animate">
+    <h2>Home</h2>
+    <img src="Karthick.S Image.jpg" alt="Profile picture of Karthick" />
+    <p style="font-size: 30px;"><em>Hi, I'm Karthick, a passionate and enthusiastic web developer. I love building user-friendly and efficient websites using HTML, CSS, and JavaScript.</em></p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-bg section-animate">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <p style="font-size: 30px;"><em>Welcome to my portfolio. I'm a detail-oriented developer passionate about clean code and beautiful design.</em></p>
+      <p>As a front-end developer, I specialize in creating user-friendly, responsive, and visually engaging web interfaces using HTML, CSS, JavaScript, and modern frameworks like React. I focus on performance, accessibility, and seamless user experience across all devices and browsers.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-animate">
+    <h2>Projects</h2>
+      <div class="projects-grid">
+      <div class="project-card">
+        <img src="Project 1.PNG" alt="Screenshot of Project 1" />
+        <h3>Employee Information System</h3>
+        <p>A simple view of employee information in the HRMS Portal.</p>
+        <a href="Project_1.html" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="Project 2.PNG" alt="Screenshot of Project 2" />
+        <h3>Employee Attendance Report</h3>
+        <p>A simple view of employee attendance in the HRMS Portal.</p>
+        <a href="Project_2.html" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="Project 3.PNG" alt="Screenshot of Project 3" />
+        <h3>Calculator</h3>
+        <p>Modern Flat Calculator</p>
+        <a href="Project 3.html" target="_blank">View Project</a>
+      </div>
+<div class="project-card">
+        <img src="Project 4.PNG" alt="Screenshot of Project 4" />
+        <h3>Chess Board</h3>
+        <p>Chessboard Using Grid System </p>
+        <a href="Project 4.html" target="_blank">View Project</a>
+      </div>
+<div class="project-card">
+        <img src="Project 5.PNG" alt="Screenshot of Project 5" />
+        <h3>Shop Kart Website</h3>
+        <p>Online Shopping Website With Carousel</p>
+        <a href="Project 5.html" target="_blank">View Project</a>
+      </div>
+</div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-animate">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mobile">Mobile No:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Karthick | Built with ❤️ in HTML & CSS</p>
+  </footer>
+  
+
+</body>
+</html>

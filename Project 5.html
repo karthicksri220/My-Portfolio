@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Shopping</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .carousel-inner img{
+        height: 50vh
+    }
+</style>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ShopKart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide mt-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://assets.entrepreneur.com/content/3x2/2000/20150812074510-Online-shopping.jpeg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.yourstory.com/cs/wordpress/2015/10/yourstory-delhi-online-shopping.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.ecrebo.com/hubfs/AdobeStock_302909509_800533%20%281%29.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="container mt-5">
+    <h2 class="mb-4 text-center">Featured Products</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Product Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/19957612/2022/12/23/94d24ca2-20f1-4494-8b17-e741e532994a1671768394830-OnePlus-Unisex-Headphones-2671671768394661-3.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Wireless Headphones</h5>
+            <p class="card-text">Experience high-quality sound with our latest wireless headphones. Long battery life and comfort fit.</p>
+           
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Another Product -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.jiomart.com/images/product/original/rvnjwxmr8l/punnkfunnk-kids-smart-watch-1-44-tft-display-4g-sim-card-phone-with-long-lasting-voice-call-kids-gps-music-player-alarm-clock-games-ip67-waterproof-blue-product-images-orvnjwxmr8l-p608090268-0-202402191738.jpg?im=Resize=(420,420)" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Smart Watch</h5>
+            <p class="card-text">Stay connected and track your health with our stylish and feature-rich smartwatch.</p>
+           
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Another Product -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://avstore.in/cdn/shop/files/2.AVStore-JBL-PartyBox-110-160W-Portable-Wireless-Speaker-Front-Left-Angled-View.jpg?v=1682411625&width=2000" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Bluetooth Speaker</h5>
+            <p class="card-text">Portable Bluetooth speaker with powerful bass and sleek design for your outdoor parties.</p>
+            
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
